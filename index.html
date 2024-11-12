@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/grid.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+
+            <!-- introduction page -->
+            <div class="intropage">
+                <p class="intro-text">Hello there! <br><br><span>Thanks for joining this important survey about
+                        smartphones. </span></p>
+                <p class="itro_title">Please click NEXT to start the survey</p>
+                <div class="lines"></div>
+                <div class="btn-div introbtn">
+                    <button type="button" id="introBtn" class="btn">Next</button>
+                </div>
+            </div>
+
+
+            <!-- Gender page -->
+            <div class="genderbtn" style="display:none;">
+                <p class="question">Please Select Your Gender</p>
+                <div class="lines"></div>
+                <div class="gendergroupbtn">
+                    <button class="genbtn">Male</button>
+                    <button class="genbtn">Female</button>
+                </div>
+            </div>
+
+            <!-- AgeGroup page -->
+            <div class="agebtn" style="display:none;">
+                <p class="question">Please Select Your Age Group</p>
+                <div class="lines"></div>
+                <div class="gendergroupbtn">
+                    <button class="agebttn">15-20 years</button>
+                    <button class="agebttn">21-25 years</button>
+                    <button class="agebttn">26-30 years</button>
+                    <button class="agebttn">31-35 years</button>
+                    <button class="agebttn">36-40 years</button>
+                    <button class="agebttn">41-45 years</button>
+                    <button class="agebttn">Above 45 years</button>
+                </div>
+            </div>
+
+            <!-- Radiobutton page -->
+            <div class="radiobtn" style="display: none;">
+                <div class="question-radio">
+                    <p class="question">Do you or any member of household work in any of the following occupation(it
+                        could be part-time or full-time)</p>
+                    <div class="lines"></div>
+                    <div class="option-section">
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer0"
+                                    value="Consulting and Professional services">
+                            </div>
+                            <div class="lab">
+                                <label for="answer0">Consulting and Professional services</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer11" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer11">Healthcare</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer21" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer21">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer31" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer31">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer41" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer41">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer51" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer51">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer61" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer61">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer71" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer71">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer81" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer81">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer91" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer91">Pay 20%</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="radio" class="custom-checkbox" name="answerr" id="answer101" value="20%">
+                            </div>
+                            <div class="lab">
+                                <label for="answer101">Pay 20%</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div">
+                    <button type="button" id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+
+            <!-- Checkbox page -->
+            <div class="checkbox" style="display:none;">
+                <div class="question-box">
+                    <p class="question">Do you or any member of household work in any of the following occupation(it
+                        could be part-time or full-time)</p>
+                    <div class="lines"></div>
+                    <div class="option-section">
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer"
+                                    value="Consulting and Professional services">
+                            </div>
+                            <div class="lab">
+                                <label for="answer">Consulting and Professional services</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer1"
+                                    value="Healthcare">
+                            </div>
+                            <div class="lab">
+                                <label for="answer1">Healthcare</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer2"
+                                    value="Hospitality and Tourism">
+                            </div>
+                            <div class="lab">
+                                <label for="answer2">Hospitality and Tourism</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer3"
+                                    value="Retail">
+                            </div>
+                            <div class="lab">
+                                <label for="answer3">Retail</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer4"
+                                    value="Education and Teaching">
+                            </div>
+                            <div class="lab">
+                                <label for="answer4">Education and Teaching</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer5"
+                                    value="BPO, KPO">
+                            </div>
+                            <div class="lab">
+                                <label for="answer5">BPO, KPO</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer6"
+                                    value="Food and Beverages">
+                            </div>
+                            <div class="lab">
+                                <label for="answer6">Food and Beverages</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer7"
+                                    value="Banking and Finance">
+                            </div>
+                            <div class="lab">
+                                <label for="answer7">Banking and Finance</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer8"
+                                    value="Infrastructure">
+                            </div>
+                            <div class="lab">
+                                <label for="answer8">Infrastructure</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer9"
+                                    value="Government">
+                            </div>
+                            <div class="lab">
+                                <label for="answer9">Government</label>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="inp">
+                                <input type="checkbox" class="custom-checkbox" name="answer" id="answer10"
+                                    value="Automobiles">
+                            </div>
+                            <div class="lab">
+                                <label for="answer10">Automobiles</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div checkbtn">
+                    <button type="button" class="btn">Next</button>
+                </div>
+            </div>
+
+            <!-- Imagewithradio page -->
+            <div class="imagebtn" style="display:none;">
+                <div class="question-radio">
+                    <p class="question">Do you or any member of household work in any of the following occupation(it
+                        could be part-time or full-time)</p>
+                    <div class="lines"></div>
+                    <div class="option-section">
+                        <div class="optionradio">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="radio" name="sample-radio" class="radio-button">
+                        </div>
+                        <div class="optionradio">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="radio" name="sample-radio" class="radio-button">
+                        </div>
+                        <div class="optionradio">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="radio" name="sample-radio" class="radio-button">
+                        </div>
+                        <div class="optionradio">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="radio" name="sample-radio" class="radio-button">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div radioimage">
+                    <button type="button" id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+
+            <!-- Imagewithcheckbox page -->
+            <div class="imagebtncheckbox" style="display:none;">
+                <div class="question-box">
+                    <p class="question">Do you or any member of household work in any of the following occupation(it
+                        could be part-time or full-time)</p>
+                    <div class="lines"></div>
+                    <div class="option-section">
+                        <div class="optioncheckbox">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="checkbox" name="custom-checkbox" class="custom-checkbox">
+                        </div>
+                        <div class="optioncheckbox">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="checkbox" name="custom-checkbox" class="custom-checkbox">
+                        </div>
+                        <div class="optioncheckbox">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="checkbox" name="custom-checkbox" class="custom-checkbox">
+                        </div>
+                        <div class="optioncheckbox">
+                            <img src="./Assest/n1.jpg" alt="Sample Image">
+                            <input type="checkbox" name="custom-checkbox" class="custom-checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div checkimage">
+                    <button type="button" id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+
+
+            <!-- dropdown page -->
+            <div class="dropdown" style="display:none;">
+                <div class="question-box">
+                    <p class="question">Do you or any member of household work in any of the following occupation(it
+                        could be part-time or full-time)</p>
+                    <div class="lines"></div>
+                        <div class="option-section">
+                            <div class="droplist">
+                                <p>This color look more fashionable and trendy</p>
+                                <select id="rank1" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color look quite subtle (not loud) and suits my taste/status</p>
+                                <select id="rank2" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color matches best with my culture and traditions</p>
+                                <select id="rank3" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>Friends/family recommended/influenced me to buy this colorFriends/family
+                                    recommended/influenced me to buy this color</p>
+                                <select id="rank4" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color look more fashionable and trendy</p>
+                                <select id="rank5" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color look more fashionable and trendy</p>
+                                <select id="rank6" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color look more fashionable and trendy</p>
+                                <select id="rank7" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                            <div class="droplist">
+                                <p>This color look more fashionable and trendy</p>
+                                <select id="rank8" name="rank">
+                                    <option selected disabled>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                </div>
+                <div class="btn-div">
+                    <button type="button" id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        var root = document.documentElement;
+        var arr = [];
+        var processingChange = false;
+
+        $(document).ready(function () {
+            if ($(window).width() > 768) {
+                $('.option').click(function () {
+
+                    var checkbox = $(this).find('.custom-checkbox');
+                    if (checkbox.attr('type') === 'radio') {
+                        var groupName = checkbox.attr('name');
+
+                        $('.option').removeClass('hovered');
+                        $('input[type="radio"][name="' + groupName + '"]').parent().removeClass('hovered');
+                    }
+                    checkbox.prop('checked', !checkbox.prop('checked'));
+                    $(this).toggleClass('checked hovered', checkbox.prop('checked'));
+                });
+
+                $('.custom-checkbox[type="radio"]').click(function () {
+
+                    var groupName = $(this).attr('name');
+                    $('.option').removeClass('hovered');
+                    $('input[type="radio"][name="' + groupName + '"]').parent().removeClass('hovered');
+                    var checkbox = $(this);
+                    checkbox.prop('checked', !checkbox.prop('checked'));
+                    $(this).parent().parent().toggleClass('checked hovered', checkbox.prop('checked'));
+                });
+
+                $('.option input[type="radio"]').mouseenter(function () {
+                    var $option = $(this).closest('.option');
+                    $option.addClass('hovered');
+                }).mouseleave(function () {
+                    $('.option').removeClass('hovered');
+                });
+                $('.custom-checkbox[type="checkbox"]').click(function () {
+
+                    var checkbox = $(this);
+                    checkbox.prop('checked', !checkbox.prop('checked'));
+                    $(this).parent().parent().toggleClass('checked hovered', checkbox.prop('checked'));
+                });
+            }
+        });
+
+        $('#introBtn').click(function () {
+            $('.intropage').fadeOut('slow', function () {
+                $('.genderbtn').fadeIn('slow');
+            });
+        });
+
+        $('#nextBtn').click(function () {
+            $('.radiobtn').fadeOut('slow', function () {
+                $('.checkbox').fadeIn('slow');
+            });
+        });
+
+        $('.genbtn').click(function () {
+            $('.genderbtn').fadeOut('slow', function () {
+                $('.agebtn').fadeIn('slow');
+            });
+        });
+
+        $('.agebttn').click(function () {
+            $('.agebtn').fadeOut('slow', function () {
+                $('.radiobtn').fadeIn('slow');
+            });
+        });
+
+        $('.checkbtn').click(function () {
+            $('.checkbox').fadeOut('slow', function () {
+                $('.imagebtn').fadeIn('slow');
+            });
+        });
+        $('.radioimage').click(function () {
+            $('.imagebtn').fadeOut('slow', function () {
+                $('.imagebtncheckbox').fadeIn('slow');
+            });
+        });
+        $('.checkimage').click(function () {
+            $('.imagebtncheckbox').fadeOut('slow', function () {
+                $('.dropdown').fadeIn('slow');
+            });
+        });
+
+        function changeCSSVariable(variableName, newValue) {
+            root.style.setProperty(variableName, newValue);
+        }
+
+        function changeBackgroundImage(newImageUrl) {
+            root.style.setProperty('--back-image', 'url(' + newImageUrl + ')');
+        }
+        changeBackgroundImage('https://source.unsplash.com/random');
+
+        // $(document).ready(function () {
+        //     $.ajax({
+        //         url: "https://salesync.in/demo/change_effect",
+        //         type: "GET",
+        //         dataType: "json",
+        //         success: function (response) {
+        //             console.log(response);
+        //             changeCSSVariable('--button-primary-color', response.btnbg);
+        //             changeCSSVariable('--btnfont-color', response.color);
+        //             changeCSSVariable('--background-color', response.background);
+        //         },
+        //         error: function (xhr, status, error) {
+        //             console.error("Error:", error);
+        //         }
+        //     });
+        // });
+
+
+
+        $(document).ready(function () {
+            $(".optionradio").click(function () {
+                $(".optionradio img").css("opacity", "1");
+                $(this).find(".radio-button").prop("checked", true);
+                $(this).find("img").css("opacity", "0.5");
+            });
+        });
+
+        $(document).ready(function () {
+            if ($(window).width() > 768) {
+                $(".optioncheckbox").on("click touchend", function (event) {
+                    var checkbox = $(this).find('.custom-checkbox');
+                    checkbox.prop("checked", !checkbox.prop("checked"));
+                    updateImageOpacity($(this), checkbox);
+                });
+                $(".custom-checkbox").on("change", function () {
+                    updateImageOpacity($(this).closest(".optioncheckbox"), $(this));
+                });
+
+                function updateImageOpacity(optioncheckbox, checkbox) {
+                    var img = optioncheckbox.find("img");
+                    img.css("opacity", checkbox.is(":checked") ? "0.5" : "1");
+                }
+            } else {
+                $(".optioncheckbox").on("change touchend", function (event) {
+                    var checkbox = $(this).find('.custom-checkbox');
+                    checkbox.prop("checked", !checkbox.prop("checked"));
+                    updateImageOpacity($(this), checkbox);
+                });
+                $(".custom-checkbox").on("change", function () {
+                    updateImageOpacity($(this).closest(".optioncheckbox"), $(this));
+                });
+
+                function updateImageOpacity(optioncheckbox, checkbox) {
+                    var img = optioncheckbox.find("img");
+                    img.css("opacity", checkbox.is(":checked") ? "0.5" : "1");
+                }
+            }
+        });
+
+
+
+
+
+$(document).ready(function() {
+    $('[name="rank"]').change(function() {
+        if (processingChange) return; // Exit if change event is already being processed
+        processingChange = true; // Set flag to indicate event processing
+
+        var selectedValue = $(this).val();
+        var id = $(this).attr('id');
+        var pText = $(this).siblings('p').text
+        var mergedText = selectedValue + " - " + pText;
+
+        if (selectedValue != null) {
+            var index = arr.findIndex(item => item.startsWith(selectedValue));
+            if (index !== -1 && arr[index] !== mergedText) {
+                arr[index] = mergedText;
+                console.log("Array after replacing: ", arr);
+            } else {
+                arr.push(mergedText);
+                console.log("Array after pushing: ", arr);
+            }
+        }
+
+        $('[name="rank"]').each(function() {
+            if ($(this).val() === selectedValue && $(this).attr('id') !== id) {
+                $(this).val('Select').change();
+                return false;
+            }
+        });
+
+        processingChange = false; 
+    });
+});
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.container .genderbtn .gendergroupbtn,
+.container .agebtn .gendergroupbtn {
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .radiobtn .question-radio .option-section,
+.container .checkbox .question-box .option-section {
+    grid-template-columns: 1fr;
+}
+
+.container .imagebtn .question-radio .option-section,
+.container .imagebtncheckbox .question-box .option-section{
+    grid-template-columns: repeat(3, 1fr);
+}
+.container .dropdown .question-box .option-section{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+    .container .genderbtn .gendergroupbtn,
+    .container .agebtn .gendergroupbtn {
+        grid-template-columns: 1fr;
+    }
+    .container .radiobtn .question-radio .option-section,
+.container .checkbox .question-box .option-section {
+    grid-template-columns: 1fr;
+}
+.container .imagebtn .question-radio .option-section,
+.container .imagebtncheckbox .question-box .option-section{
+    grid-template-columns: 1fr;
+}
+.container .dropdown .question-box .option-section{
+    grid-template-columns: 1fr;
+}
+
+}

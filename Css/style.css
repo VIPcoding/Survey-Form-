@@ -1,0 +1,561 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border: none;
+}
+
+
+
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    min-height: 100vh;
+}
+
+:root {
+    --background-color: #ffffff;
+    --back-image: url('../Assest/backimg.webp');
+    --background-border-color: #dc921b78;
+    --hover-background-color: #D6E9FF;
+    --hover-border-color: #0093E8;
+    --button-primary-color:#0093E8;
+    --secondary-color: #ff8800;
+    --font-color: #000000;
+    --hoverFont-coloR: #0093E8;
+    --line-color: #0093E8;
+    --input-border-color: #d3d3d3;
+    --btnfont-color: #ffff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+button,
+button:hover {
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+section {
+    background-image:var(--back-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    height: 85%;
+    width: 70%;
+    background-color: var(--background-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 8px solid var(--background-border-color);
+    border-bottom: none;
+}
+
+.container .genderbtn,
+.container .agebtn,
+.container .radiobtn,
+.container .checkbox,
+.container .intropage,
+.container .imagebtn, 
+.container .imagebtncheckbox,
+.container .dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intropage{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.intro-text{
+  text-align: center;
+  font-size: 24px;
+}
+.itro_title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.introbtn{
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+.container .genderbtn .question,
+.container .agebtn .question {
+    font-size: 24px;
+    margin-top: 4rem;
+}
+
+.container .genderbtn .gendergroupbtn,
+.container .agebtn .gendergroupbtn {
+    width: 60%;
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.container .genderbtn .gendergroupbtn .genbtn,
+.container .agebtn .gendergroupbtn .agebttn {
+    width: 100%;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--background-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    transition: border 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+}
+
+.container .genderbtn .gendergroupbtn .genbtn:hover,
+.container .agebtn .gendergroupbtn .agebttn:hover {
+    color: var(--hoverFont-coloR);
+    border: 1px solid var(--hover-border-color);
+    background-color: var(--hover-background-color);
+}
+
+.container .radiobtn .question-radio,
+.container .checkbox .question-box {
+    width: 80%;
+}
+
+.container .radiobtn .question-radio .question,
+.container .checkbox .question-box .question,
+.container .imagebtn  .question-radio .question,
+.container .imagebtncheckbox .question-box .question,
+.container .dropdown .question-box .question  {
+    font-size: 24px;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.container .radiobtn .question-radio .option-section,
+.container .checkbox .question-box .option-section,
+.container .dropdown .question-box .option-section{
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    align-items: center;
+    max-height: 400px;
+    height: auto;
+    overflow-y: auto;
+}
+
+.container .radiobtn .question-radio .option-section .option,
+.container .checkbox .question-box .option-section .option{
+    width: 70%;
+    display: flex;
+    border: 1px solid var(--input-border-color);
+    padding: 12px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    /* Adjusted transition properties */
+}
+
+
+.container .radiobtn .question-radio .option-section .option .lab,
+.container .checkbox .question-box .option-section .option .lab {
+    margin: auto;
+}
+
+.container .radiobtn .question-radio .option-section .option:hover,
+.container .checkbox .question-box .option-section .option:hover {
+    color: var(--hoverFont-coloR);
+    border-color: 1px solid var(--hover-border-color);
+    background-color: var(--hover-background-color);
+}
+
+.option input[type="checkbox"]:checked+.custom-checkbox::after {
+    opacity: 1;
+}
+
+.container .radiobtn .question-radio .option-section .option.hovered,
+.container .checkbox .question-box .option-section .option.hovered {
+    border: 1px solid var(--hover-border-color) ;
+    background-color: var(--hover-background-color) ;
+    color: var(--hoverFont-coloR);
+}
+
+.container .radiobtn .btn-div,
+.container .checkbox .btn-div,
+.container .intropage .btn-div,
+.container .imagebtn .btn-div,
+.container .imagebtncheckbox .btn-div,
+.container .dropdown .btn-div {
+    width: 25%;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.container .radiobtn .btn-div .btn,
+.container .checkbox .btn-div .btn,
+.container .intropage .btn-div .btn,
+.container .imagebtn .btn-div .btn,
+.container .imagebtncheckbox .btn-div .btn,
+.container .dropdown .btn-div .btn  {
+    border: none;
+    background: var(--button-primary-color);
+    color: var(--btnfont-color);
+    padding: 11px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--input-border-color);
+    display: grid;
+    place-items: center;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    transition: background .5s ease-out ;
+    /* margin-right: 1px; */
+}
+
+input[type='radio']:checked:before {
+    background: var(--hoverFont-coloR);
+}
+
+input[type='radio']:checked {
+    border: 1px solid var(--hover-border-color);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: var(--background-color);
+    border: 1px solid var(--input-border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    transition: background-color 0.5s ease-out;
+}
+
+input[type="checkbox"]::after {
+    font-family: FontAwesome;
+    content: "\f00c";
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: var(--input-border-color);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--hoverFont-coloR);
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+.container .imagebtn .question-radio .option-section,
+.container .imagebtncheckbox .question-box .option-section{
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    align-items: center;
+    max-height: 600px;
+    height: auto;
+    overflow-y: auto;
+}
+.container .imagebtn .question-radio .option-section .optionradio,
+.container .imagebtncheckbox .question-box .option-section .optioncheckbox{
+    width: 100%;
+    padding: 12px;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+   
+}
+.container .imagebtn .question-radio .option-section .optionradio img,
+.container .imagebtncheckbox .question-box .option-section .optioncheckbox img {
+    display: block;
+}
+
+.container .imagebtn .question-radio .option-section .optionradio input[type="radio"]{
+    position: absolute;
+    top: 3rem;
+    left: 3rem; 
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+
+.container .imagebtn .question-radio .option-section .optionradio input[type='radio']:before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.container .imagebtn .question-radio .option-section .optionradio input[type='radio']:checked:before {
+    /* background: var(--); */
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    /* transition: background 1.5s ease-out ; */
+}
+
+.container .imagebtn .question-radio .option-section .optionradio input[type='radio']:checked {
+    border: 1px solid var(--hover-border-color);
+}
+
+.container .imagebtncheckbox .question-box .option-section .optioncheckbox input[type="checkbox"]{
+    position: absolute;
+    top: 3rem;
+    left: 3rem; 
+}
+
+.container .dropdown .question-box .option-section{
+    padding: 0 40px;
+}
+.droplist select{
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        background-color: var(--background-color);
+    }
+    .intropage {
+        width: 100%;
+        padding: 30px 5px;
+    }
+    .intro-text{
+        text-align: left;
+        font-size: 16px;
+        margin-top: 4rem;
+       
+      }
+      .itro_title{
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 20px;
+       
+      }
+      .introbtn{
+        position: relative;
+       
+    }
+    .container .genderbtn,
+    .container .agebtn,
+    .container .radiobtn,
+    .container .intropage,
+    .container .checkbox,
+    .container .imagebtn,
+    .container .imagebtncheckbox,
+    .container .dropdown {
+        padding: 0 12px;
+        align-items: self-start;
+    }
+
+    .container .genderbtn .question,
+    .container .agebtn .question {
+        font-size: 16px;
+        align-self: flex-start;
+    }
+
+    .container .genderbtn .gendergroupbtn,
+    .container .agebtn .gendergroupbtn {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .container .genderbtn .gendergroupbtn .genbtn,
+    .container .agebtn .gendergroupbtn .agebttn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: var(--button-primary-color);
+        color: var(--btnfont-color);
+
+    }
+
+    .lines {
+        width: 100px;
+        height: 3px;
+        background-color: var(--button-primary-color);
+        top: 9%;
+        left: 4%;
+        margin-top: 8px;
+    }
+
+    .container .radiobtn .question-radio,
+    .container .checkbox .question-box,
+    .container .imagebtn .question-radio,
+    .container .imagebtncheckbox .question-box,
+    .container .dropdown .question-box {
+        width: 100%;
+    }
+
+    .container .radiobtn .question-radio .question,
+    .container .checkbox .question-box .question,
+    .container .dropdown .question-box .question {
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .container .radiobtn .question-radio .option-section,
+    .container .checkbox .question-box .option-section {
+        align-items: center;
+        max-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+        margin-top: 1rem;
+        gap: 0;
+    }
+
+    .container .radiobtn .question-radio .option-section .option,
+    .container .checkbox .question-box .option-section .option {
+        border: none;
+        margin-top: 10px;
+        padding: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .container .radiobtn .question-radio .option-section .option:hover,
+    .container .checkbox .question-box .option-section .option:hover {
+        color: black;
+        background-color: transparent;
+    }
+
+    .container .radiobtn .question-radio .option-section .option .lab,
+    .container .checkbox .question-box .option-section .option .lab {
+        margin: 0;
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+
+    .container .radiobtn .btn-div,
+    .container .checkbox .btn-div,
+    .container .intropage .btn-div,
+    .container .imagebtn .btn-div,
+    .container .imagebtncheckbox .btn-div,
+    .container .dropdown .btn-div {
+        width: 100%;
+        margin-top: 4rem;
+        position: relative;
+    }
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        display: grid;
+        place-items: center;
+    }
+    
+    input[type='radio']:before {
+        width: 7px;
+        height:7px;
+    }
+    .container .imagebtn .question-radio .option-section,
+    .container .imagebtncheckbox .question-radio .option-section{
+        max-height: 70vh;
+        overflow: none;
+    }
+    .container .imagebtn .question-radio .option-section .optionradio input[type='radio']:checked:before{
+        width: 9px;
+        height: 8px;
+    }
+    .container .imagebtn .question-radio  .question,
+    .container .imagebtncheckbox .question-box .question{
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container .dropdown .question-box .option-section{
+        padding: 0;
+    }
+}
